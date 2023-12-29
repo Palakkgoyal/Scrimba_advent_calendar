@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body, html { 
+  margin: 0;
+  padding: 0;
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+  text-align: center;
+  font-family: 'Play', sans-serif;
+  overflow-x: hidden;
+}
+
+:root {
+  --jeopardy-blue: #060CE9;
+  --font-color-main: #fff;
+}
+
+header, 
+#card-container,
+.btns-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  padding: 1em;
+}
+
+header h1 {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 2.5rem;
+  letter-spacing: -1.2px;
+}
+
+header h3 {
+  font-size: 1.5rem;
+}
+
+.btns-container {
+  margin-top: 1.5em;
+  gap: 1.2em;
+}
+
+.btn {
+  width: 70px;
+  aspect-ratio: 1;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 4px 0 white, 
+              4px 4px white,
+              0 4px white,
+              -4px 4px white,
+              -4px 0 white,
+              0 -4px white,
+              -4px -4px white,
+              4px -4px white ;  
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+}
+
+.btn:hover {opacity: 0.8;}
+.btn:active {transform: translate(0.8);}
+.btn:focus {outline: none;}
+
+#html {background: #FFF388;}
+#css {background: #FFC49A;}
+#js {background: #A1D4FD;}
+
+main  {
+  display: none;
+}
+
+main h3 {
+  font-size: 2.5rem;
+}
+
+#card-container {
+  flex-wrap: wrap;
+  margin-top: 2em;
+  gap: 1em;
+  padding: 1em;
+}
+
+.card {
+  flex: 0.3 0 400px;
+  border-radius: 8px;
+  width: 400px;
+  aspect-ratio: 2;
+  padding: 0.6em;
+  perspective: 1000px;
+  position: relative;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  box-sizing: border-box;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: inherit;
+  background: var(--jeopardy-blue);
+  color: var(--font-color-main);
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}

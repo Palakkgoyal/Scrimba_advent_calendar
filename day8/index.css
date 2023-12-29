@@ -1,0 +1,99 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+body {
+    background: url("./bar.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+:root {
+    --progressbar-bg: lightgrey;
+    --start: red;
+    --middle: blue;
+    --finish: green;
+}
+
+h1 {
+    color: #eee;
+    text-shadow: 2px 2px 20px #eee, 0px 0px 3px #000;
+    text-decoration: underline;
+    margin-bottom: 15vh;
+}
+
+.progress-bar {
+    border: 1px solid #eee;
+    box-shadow: 2px 2px 20px #eee;
+    width: 90vw;
+    max-width: 500px;
+    height: 40px;
+    border-radius: 40px;
+    overflow: hidden;
+    background: #eee;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+
+.progress-status {
+    height: 100%;
+    border-radius: inherit;
+    animation: progress 7s linear infinite;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5vh 0;
+    width: 90vw;
+    max-width: 500px;
+    height: 300px;
+    position: relative;
+}
+
+.walk1 {
+    width: 130px;
+    height: 300px;
+    background: url("./walker.png");
+    background-repeat: no-repeat;
+    background-size: 1200px;
+    position: absolute;
+    animation: w1Effect 2s steps(8) alternate-reverse infinite;
+}
+
+@keyframes w1Effect {
+    0% {
+         background-position: 0px;
+         left: 0%;
+    }
+    100% {
+        background-position: -1200px;
+        left: 80%;
+    }
+}
+
+@keyframes progress {
+    0% {
+        width: 0;
+        background: var(--start);
+    }
+    50% {
+        width: 50%;
+        background: var(--middle);
+    }
+    75%, 100% {
+        width: 100%;
+        background: var(--finish);
+    }
+}

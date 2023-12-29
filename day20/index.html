@@ -1,0 +1,37 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="./index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet">
+        <script src="index.pack.js"></script>
+    </head>
+    <body>
+        <main>
+            <h1>Deep Array Filter</h1>
+            <form>
+                <div class="input-container">
+                    <label for="array">Enter a valid JavaScript Array</label>
+                    <textarea required id="array" rows="10" maxlength="600"></textarea>
+                </div>
+                <div class="input-container">
+                    <label for="element">Enter the element</label>
+                    <input type="text" id="element" required maxlength="200">
+                </div>
+                <div class="input-container">
+                    <label for="to-do">What you want to do?</label>
+                    <select name="to-do" id="to-do" required>
+                        <option value="remove">Remove the element</option>
+                        <option value="keep">Remove other elements</option>
+                    </select>
+                </div>
+                <button>SUBMIT</button>
+            </form>
+            <section id="sol-container">
+                <h2>Solution Array:</h2>
+                <p id="solution"></p>
+            </section>
+        </main>
+        <script src="./index.js"></script>
+    </body>
+</html>

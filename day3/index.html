@@ -1,0 +1,29 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1>Candimba</h1>
+        <form>
+            <div>
+                <div class="input-container">
+                    <label>No. of little kids</label>
+                    <input type="number" id="kids" required min="1">
+                </div>
+                <div class="input-container">
+                    <label>No. of yummy candies</label>
+                    <input type="number" id="candies" required min="1">
+                </div>
+            </div>
+            <button type="submit">Get distribution</button>
+        </form>
+        <section id="modal">
+            <div>
+                <button id="close-modal">X</button>
+                <p class="modal-note">Maximum candies that can be served are</p>
+                <h3 id="total-candy"></h3>
+            </div>
+        </section>
+        <script src="index.js"></script>
+    </body>
+</html>

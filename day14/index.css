@@ -1,0 +1,125 @@
+:root {
+  --wine-red: #C7375F;
+  --bright-red: #D42D2F;
+  --dark-green: #344D2F;
+  --light-green: #77A047;
+  --gold: #FAC57D;
+  --snow: #F0F4F7;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    color: var(--dark-green);
+    background-color: var(--snow);
+    background: url("https://img.freepik.com/premium-photo/big-moon-night-starry-sky-sea-mountains-horizon-nature-background_162585-3532.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding:  20px;
+    color: white;
+    font-family: cursive;
+}
+
+.elf-hangout-zone::-webkit-scrollbar {
+  width: 0.5em;
+  border-radius: 10px;
+}
+ 
+.elf-hangout-zone::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+.elf-hangout-zone::-webkit-scrollbar-thumb {
+  background: darkgrey;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  border-radius: inherit;
+}
+
+.container {
+    position: relative;
+    margin: 2em;
+    width: 290px;
+}
+
+.elf-hangout-zone {
+    padding: 1em 2em;
+    display: flex;
+    min-width: 200px;
+    min-height: 200px;
+    height: 200px;
+    width: 100%;
+    max-width: 23ch;
+    flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
+    background: rgba(199, 55, 95, 0.7);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    position: relative;
+}
+
+h1 { 
+    margin: 0;
+}
+
+.elf {
+    font-size: 30px;
+    width: 100%;
+}
+
+button {
+    padding: 1em 2em;
+    border: none;
+    font-size: 1.2rem;
+    background-color: var(--dark-green);
+    color: var(--snow);
+    border-radius: 999px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.03)
+}
+
+#tea-main-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid white;
+    background: #eee;
+    padding: 10px;
+    border-radius: 8px;
+    color: var(--wine-red);
+    display: none;
+}
+
+.tea-container {
+    width: 200px;
+    height: 200px;
+}
+
+.elf-tea-gif {
+    width: 100%;
+    height: 100%;
+}
+
+#serve-tea {
+    position: absolute;
+    padding: 8px;
+    border-radius: 50%;
+    top: -10px;
+    right: -10px;
+}

@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <title>Switzerland Advent Calendar</title>
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        
+        <header>
+            <div class="flag-container flag1">
+                <span class="flag-pole"></span>
+                <div class="flag flag-swiss">
+                    <div class="cross cross1"></div>
+                    <div class="cross cross2"></div>
+                </div>
+            </div>
+            <h1 class="heading bg-transparent">Switzerland Advent Calendar</h1>
+            <div class="flag-container flag2">
+                <span class="flag-pole"></span>
+                <div class="flag flag-swiss">
+                    <div class="cross cross1"></div>
+                    <div class="cross cross2"></div>
+                </div>
+            </div>
+        </header>
+        
+        <main class="container">
+            <section class="today-task-container bg-transparent">
+                <h3 id="today-date">11 December</h3>
+                <p id="today-task">Be good, do good</p>
+            </section>
+            <section class="calendar-container bg-transparent">
+                <h3>Advent Calendar</h3>
+                <div id="dates-container"></div>
+                <section id="popup">
+                    <div class="popup-sub-container">
+                        <button id="cross-btn">X</button>
+                        <h3>December <span id="popup-date">11</span></h3>
+                        <p id="popup-task">Explore the festive decorations in Swiss homes during Christmas</p>
+                    </div>
+                </section>
+            </section>
+        </main>
+        
+        
+        <script src="./index.js" type="module"></script>
+    </body>
+</html>

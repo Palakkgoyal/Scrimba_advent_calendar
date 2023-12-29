@@ -1,0 +1,225 @@
+:root {
+  --radius: 3px;
+  --main-color: #ffffff;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('./xmas-bg3.png');
+    background-size: cover;
+    min-height: 100vh;
+}
+
+header {
+    height: 110px;
+    background-image: linear-gradient(rgba(0, 128, 0, 0.4), rgba(0, 128, 0, 0));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Pacifico';
+    font-size: 3em;
+    color: darkred;
+}
+
+#open-instructions-btn {
+    position: absolute;
+    right: 20px;
+    top: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 5px 10px;
+    box-shadow: 2px 2px 5px #eee;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    min-height: calc(100vh - 110px);
+}
+
+section {
+    text-align: center;
+    padding: 1em;
+    position: relative;
+}
+
+#word-display {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+form {
+    border-radius: var(--radius);
+    padding: 2em;
+    width: 300px;
+    display: inline-block;
+    background-color: white;
+    border-radius: var(--radius);
+    box-shadow: 1px 1px 20px 1px rgba(255, 0, 0, 0.5);
+}
+
+.form-inner {
+    display: flex;
+}
+
+label {
+    font-family: 'Poppins'; 
+    display: block;
+    text-align: left;
+    margin: 0 auto .5em auto;
+    padding: 0 .2em;
+    color: #444
+}
+
+input[type="text"] {
+    resize: none;
+    border: 2px solid #999;
+    border-right: none;
+    border-top-left-radius: var(--radius);
+    border-bottom-left-radius: var(--radius);
+    height: 3em;
+    padding: 0;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+button {
+    background-color: var(--main-color);
+    border: 2px solid #999;
+    border-left: none;
+    border-top-right-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+    padding: 0 .6em;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+.btn-submit {
+    width: 25px;
+    display: block;
+    background-color: var(--main-color);
+}
+
+.letter {
+    border: 1px solid #999;
+    width: 45px;
+    min-height: 45px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color); 
+    border-radius: var(--radius);
+    margin: 0 .2em;
+    color: white;
+}
+
+.green { background: green; }
+.orange { background: orange; }
+.grey { background: grey; }
+
+#stats-popup, #how-to-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 8px;
+    background: #eee;
+    width: 90%;
+    max-width: 400px;
+    display: none;
+}
+
+#how-to-play {
+    display: block;
+}
+
+.instructions-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    gap: 10px;
+    padding: 10px 15px;
+}
+
+.instructions-container h2 {
+    margin: 0;
+}
+
+#close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid grey;
+}
+
+.instructions {
+    /* list-style: none; */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.instructions span {
+    margin: 0;
+    padding: 0 6px;
+}
+
+.stats-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stats-container p {
+    border-bottom: 1px solid grey;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stat {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    color: black;
+    font-weight: 600;
+    font-family: 'Pacifico';
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+#play-again {
+    width: 200px;
+    border: 0;
+    padding: 10px;
+    background: purple;
+    color: white;
+    border-radius: inherit;
+    margin-top: 1em;
+}

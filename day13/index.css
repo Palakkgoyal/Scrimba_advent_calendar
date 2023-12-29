@@ -1,0 +1,208 @@
+:root {
+  --wine-red: #C7375F;
+  --bright-red: #D42D2F;
+  --dark-green: #344D2F;
+  --light-green: #77A047;
+  --gold: #FAC57D;
+  --snow: #F0F4F7;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--snow);
+    background-color: #2a2929;
+}
+
+header {
+    margin: 0;
+    margin-top: 0;
+    margin-bottom: 4rem;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255,255,255, 0.5);
+    background: url("https://static.toiimg.com/photo/79938864.cms");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header section {
+    background: rgba(255,255,255, 0.6);
+    padding: 50px 20px;
+}
+
+h1 { 
+    margin: 0;
+    text-align: center;
+    font-weight: 700;
+    color: var(--dark-green);
+    padding: 8px;
+    text-shadow: 0 0 1px;
+    font-family: 'Mountains of Christmas', serif;
+    font-size: 2.5rem;
+}
+
+.scroll-btn {
+    padding: 10px;
+    margin-top: 1.2em;
+    border: none;
+    border-radius: 8px;
+    background: wheat;
+    font-weight: 500;
+}
+
+main  {
+    padding: 10px;
+    margin-bottom: 50px;
+    width: 100%;
+    min-width: 200px;
+    max-width: 500px;
+}
+
+.food-container {
+    position: relative;
+    display: block;
+    border: 2px solid white;
+   
+    background: var(--snow);
+    padding: 1em;
+    font-size: 1.5rem;
+    color: var(--wine-red);
+    margin-inline: auto;
+    margin-bottom: 1.3em;
+}
+
+#go-to-recipe-btn {
+    margin-top: 1em;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 8px;
+    display: none;
+}
+
+#regen-btn {
+    width: 30px;
+    border-radius: 50%;
+    padding: 2px;
+    aspect-ratio: 1;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    color: #eee;
+    border: none;
+    display: flex;
+    display: none;
+}
+
+#regen-btn img {
+    width: 100%;
+    height: 100%;
+}
+
+form input,
+form button,
+.food-container {
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    border-radius: 5px;
+    border: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+form * {
+   padding: .5em;
+   font-size: 1.3rem
+}
+
+label {
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+input { 
+    background: var(--snow);
+    color: var(--dark-green);
+}
+
+.veggie {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.result span {
+    color: var(--dark-green);
+    font-weight: 900
+}
+
+button {
+    color: var(--dark-green);
+    background: var(--gold);
+    margin-bottom: 20px;
+}
+
+button:hover,
+button:focus {
+    transform: scale(1.05);
+    cursor: pointer;  
+}
+
+#recipe-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 60px;
+    display: none;
+}
+
+#dish-img {
+    width: 100%;
+    aspect-ratio: initial;
+    border-radius: 8px;
+}
+
+#dish-title {
+    font-family: 'Mountains of Christmas', serif;;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+#recipe-container h4 {
+    font-size: 1.5rem;
+    color: var(--wine-red);
+    margin-bottom: 20px;
+}
+
+#recipe-container ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-bottom: 1px dashed;
+    padding-bottom: 20px;
+    list-style: none;
+}
+
+#recipe-container ul li::before {
+    content: "- ";
+}

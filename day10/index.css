@@ -1,0 +1,50 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #966919;
+    font-family: 'Inter', sans-serif;
+    padding: 20px;
+    background: url("https://cdn.pixabay.com/photo/2013/10/19/17/22/star-198081_1280.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    font-size: 25px;
+    color: #DEEAEE;
+    text-align: center;
+    text-shadow: 0 0 20px #000;
+}
+
+.container {
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+#player {
+  background-color: #DEEAEE;
+}
+
+button {
+    font-family: 'Inter', sans-serif;
+    background-color: #BDD59B;
+    border: 0;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+button:hover {
+    background-color: #FF9492;
+    cursor: pointer;
+}
+
+.songs {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-top: 10px;
+}

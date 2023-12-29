@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <title></title>
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <header>Thanks to <a href="https://dictionaryapi.dev/">Free Dictionary API</a> for their now  and always will be free API</header>
+        <main>
+            <div>
+                <img src="https://pbs.twimg.com/media/CWsOIfkXAAA-1gh.jpg" class="img">
+                <form>
+                    <input type="search" 
+                        class="search-bar" 
+                        id="search-field"
+                        placeholder="Search..."
+                        required
+                        maxlength="100"
+                    />
+                    <button>Search</button>
+                </form>
+            </div>
+            <span class="loader"></span>
+            
+            <section class="container" id="data-container">
+                <h2 id="title"></h2>
+                <p id="pronounciation"></p>
+                <a id="google-link" target="_blank">Google it</a>
+                <div id="audio-container"></div>
+            </section>
+        </main>
+        <script src="./index.js"></script>
+    </body>
+</html>

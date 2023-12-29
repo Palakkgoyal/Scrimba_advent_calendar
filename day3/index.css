@@ -1,0 +1,144 @@
+@font-face {
+    src: url("EmilysCandy-Regular.ttf");
+    font-family: Candy;
+}
+
+* {
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    background-image: url('/bg-xmas.png');
+}
+
+body {
+    margin: 0;
+    background: no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+}
+
+h1 {
+    text-shadow: 2px 2px 20px #242424;
+    letter-spacing: 4px;
+    color: white;
+    border-bottom: 2px dashed;
+    font-family: Candy, cursive;
+}
+
+form {
+    padding: 1em;
+    background-image: radial-gradient( circle 651px at 7% 22.8%, rgba(232,249,255,1) 10.5%, rgba(229,199,206,1) 51.3%, rgba(219,199,229,1) 97.6% );
+    transition: 0.3s ease-in-out;
+    border-radius: 4px;
+    margin-top: 10vh;
+}
+
+form:hover {
+    background-size: 120%;
+}
+
+form > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.input-container {
+    color: black;
+}
+
+form input {
+    display: block;
+    width: 100px;
+    font-size: 2.5rem;
+    margin: auto;
+    margin-top: 0.2em;
+    padding: 0.2em;
+    border: 1px solid pink;
+    color: skyblue;
+}
+
+label {
+    font-family: cursive;
+    font-weight: 500;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+form button {
+    margin-top: 2em;
+    width: 100%;
+    font-family: cursive;
+    padding: 0.5em;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    background-color: #4158D0;
+    background: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    color: white;
+    border-radius: inherit;
+    transition: 0.2s ease-in-out;
+}
+
+form button:hover {
+    transform: scale(1.02);
+}
+
+#modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    color: black;
+    text-align: center;
+    padding: 1.5em;
+    background-image: radial-gradient( circle 311px at 8.6% 27.9%,  rgba(62,147,252,0.57) 12.9%, rgba(239,183,192,0.44) 91.2% );
+    border-radius: 8px;
+    display: none;
+}
+
+#modal div {
+    position: relative
+}
+
+#close-modal {
+    position: absolute;
+    right: -15px;
+    top: -35px;
+    cursor: pointer;
+    border: none;
+    padding: 4px 8px;;
+    background: hotpink;
+    color: #eee;
+    border-radius: 50%;
+}
+
+#total-candy {
+    font-size: 4rem;
+    margin: 0;
+    color: hotpink;
+}

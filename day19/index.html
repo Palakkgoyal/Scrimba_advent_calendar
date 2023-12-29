@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+	<title>Jingle Words</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./index.css">
+
+</head>
+    <body>
+        <header>
+            <h1>Jingle Words!</h1>
+        </header>
+        <button id="open-instructions-btn">?</button>
+        <main>
+            <section>
+                <div id="word-display"></div>
+            </section>
+            <section>
+                <form>
+                    <label>Make your guess</label>
+                    <div class="form-inner">
+                        <input type="text" placeholder="gifts" id="user-input" minlength="5" maxlength="5">
+                        <button type="submit"><img src="./send.svg" class="btn-submit"></button>
+                    </div>
+                </form>
+            </section>
+            <section id="stats-popup">
+                <h2>Game Stats</h2>
+                <p>Word to guess was: <span id="guess-word">Santa</span></p>
+                <div class="stats-container">
+                    <p>Total matches: <span class="stat" id="total-matches">5</span></p>
+                    <p>Wins: <span class="stat" id="wins">3</span></p>
+                    <p>Lose: <span class="stat" id="lose">2</span></p>
+                </div>
+                <button id="play-again">Play Again</button>
+            </section>
+        </main>
+        <section id="how-to-play">
+            <div class="instructions-container">
+                <button id="close-btn">X</button>
+                <h2>How To Play</h2>
+                <p>Guess the Wordle in 6 tries.</p>
+                <ul class="instructions">
+                    <li>
+                        Each guess must be a valid 5-letter word.
+                    </li>
+                    <li>
+                        The color of the tiles will change to show how close your guess was to the word.
+                    </li>
+                    <li>
+                        <span class="green">Green</span> tile shows that letter is in the word and in the correct spot.
+                    </li>
+                    <li>
+                        <span class="orange">Orange</span> tile shows that letter is in the word but in the wrong spot.
+                    </li>
+                    <li>
+                        <span class="grey">Grey</span> tile shows that letter is not in the word
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+        <script src="./index.js" type="module"></script>
+    </body>
+</html>

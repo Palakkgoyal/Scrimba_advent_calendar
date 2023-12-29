@@ -1,0 +1,146 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 10px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(
+    to top,
+    #283e51,
+    #0a2342
+  );
+}
+
+:root {
+    --toggle-switch-bg: #232428;
+    --toggle-border: #232428;
+    --toggle-bg: #fff;
+    --toggle-width: 100px;
+    --primary-color: #283e51;
+}
+
+input { display: none; }
+
+label {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.toggle-switch {
+    display: inline-block;
+    position: relative;
+    background: var(--toggle-bg);
+    border: 2px solid var(--toggle-border);
+    height: 40px;
+    width: var(--toggle-width);
+    padding: 3px;
+    border-radius: 80px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.ball {
+    background: var(--toggle-switch-bg);
+    position: absolute;
+    transition: 0.3s ease-in-out;
+    height: calc(100% - 6px);
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+input:checked ~ .toggle-switch > .ball {
+    transform: translateX(calc(var(--toggle-width) - 100%));
+}
+
+h1 {
+    z-index: 1;
+    color: var(--primary-color);
+    font-family: cursive;
+    font-size: 10vw;
+    /* color: white; */
+    margin-top: 20px;
+}
+
+input:checked ~ h1 {
+    color: whitesmoke;
+    text-shadow: 0px 0px 5px #000;
+}
+
+.light {
+    width: 25px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: var(--primary-color);
+    position: absolute;
+}
+
+input:checked ~ .light {
+    background-color: #fff;
+    box-shadow:
+    0 0 60px 30px #fff,  /* inner white */
+    0 0 100px 60px #f0f, /* middle magenta */
+    0 0 140px 90px #0ff;
+}
+
+.light:nth-child(2) {
+    top: 10%;
+    left: 20%;
+}
+ 
+.light:nth-child(3) {
+    top: 13%;
+    right: 20%;
+}
+ 
+.light:nth-child(4) {
+    top: 30%;
+    left: 40%;
+}
+ 
+.light:nth-child(5) {
+    bottom: 10%;
+    left: 20px;
+}
+ 
+.light:nth-child(6) {
+    bottom: 10%;
+    right: 10%;
+}
+ 
+.light:nth-child(7) {
+    bottom: 40%;
+    left: 60%;
+}
+ 
+.light:nth-child(8) {
+    top: 50%;
+    left: 10%;
+}
+ 
+.light:nth-child(9) {
+    top: 40%;
+    right: 3%;
+}
+ 
+.light:nth-child(10) {
+    top: 10px;
+    left: 50%;
+}
+ 
+.light:nth-child(11) {
+    bottom: 60px;
+    left: 30%;
+}
+ 
+.light:nth-child(12) {
+    top: 5%;
+    left: 8%;
+}

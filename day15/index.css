@@ -1,0 +1,54 @@
+:root {
+    --black: #282828; 
+    --blue: #2892f9; 
+    --red: #fb2f27;
+    --yellow: #fdfe29;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: cursive;
+    background: #eee;
+} 
+
+h2 {
+    text-decoration: underline;
+}
+
+.rings {
+    width: fit-content;
+    position: relative;
+    width: 200px;
+    aspect-ratio: 1;
+    margin-inline: auto;
+}
+
+.ring {
+    position: absolute;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    inset: 20px;
+}
+
+.ring-1 { background: var(--black); }
+.ring-2 { background: var(--blue); }
+.ring-3 { background: var(--red); }
+.bullseye { background: var(--yellow); }
+
+
+.bullseye-shadow {
+    width: 40px;
+    margin: 90px;
+    aspect-ratio: 1;
+    background: var(--yellow);
+    border-radius: 50%;
+    box-shadow: 0 0 0 20px var(--red),
+                0 0 0 40px var(--blue),
+                0 0 0 60px var(--black);
+}

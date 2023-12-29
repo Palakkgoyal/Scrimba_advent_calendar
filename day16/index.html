@@ -1,0 +1,44 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <h1>🎅 Naughty List, Nice List 🎁</h1>
+        <form>
+            <input type="text" id="name-input" required minlength="1" maxlength="100">
+            <div>
+                <input type="checkbox" id="is-naughty">
+                <label for="is-naughty">Naughty?</label>
+            </div>
+            <button class="add-person-btn">Add</button>
+        </form>
+        
+        <div class="all-people-container">
+            <h2>All People</h2>
+            <p id="all-people"></p>
+        </div>
+        <p>Note: Click on name to swap or delete person</p>
+        <div class="container">
+            <div>
+                <h2>Nice List</h2>
+                <ul class="list nice-list" id="nice-list"></ul>
+            </div>
+            <div>
+                <h2>Naughty List</h2>
+                <ul class="list naughty-list" id="naughty-list"></ul>
+            </div>
+            <div id="popup">
+                <h3 id="popup-name"></h3>
+                <div class="btns-container">
+                    <button id="cross-btn">X</button>
+                    <button id="swap-person">Swap 🔁</button>
+                    <button id="delete-person">Delete 🗑️</button>
+                </div>
+            </div>
+        </div>
+        <button id="btn" type="button">Sort</button>
+
+        <script src="./index.js"></script>
+        <script src="index.pack.js"></script>
+    </body>
+</html>

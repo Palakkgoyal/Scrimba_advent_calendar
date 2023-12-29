@@ -1,0 +1,157 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1em;
+}
+
+main {
+    box-shadow: 0 0 5px #fff,
+                0 0 15px #fff,
+                0 0 25px #fff,
+                0 0 50px #abb997,
+                0 0 60px #abb997,
+                0 0 70px #abb997;
+    background-color: #abb997;
+    z-index: 3;
+}
+
+.bg {
+    position: fixed;
+    inset: 0;
+    background: url("https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL0xFRC0xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6ODI4fX19");
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    color: cadetblue;
+    text-shadow: 0 0 5px #fff,
+                 0 0 10px #fff,
+                 0 0 20px #fff,
+                 0 0 40px #eee;
+    line-height: 1.8
+}
+
+section {
+    max-width: 250px;
+    margin: 0 auto;
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+}
+
+.tree-img {
+    width: 250px;
+    height: 437px;
+}
+
+.star{
+    top: 60px;
+    left: 103px;
+    font-size: 2em;
+    position: absolute;
+}
+
+.lights {
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.lights:nth-child(3) {
+    top: 118px;
+    left: 95px; 
+}
+.lights:nth-child(4) {
+    top: 118px;
+    left: 135px; 
+}
+.lights:nth-child(5) {
+    top: 172px;
+    left: 70px; 
+}
+.lights:nth-child(6) {
+    top: 180px;
+    left: 165px; 
+}
+.lights:nth-child(7) {
+    top: 230px;
+    left: 50px; 
+}
+.lights:nth-child(8) {
+    top: 223px;
+    left: 175px; 
+}
+.lights:nth-child(9) {
+    top: 280px;
+    left: 40px;
+
+}
+.lights:nth-child(10) {
+    top: 280px;
+    left: 190px;
+}
+.lights:nth-child(11) {
+    top: 150px;
+    left: 120px;
+}
+.lights:nth-child(12) {
+    top: 200px;
+    left: 120px;
+}
+.lights:nth-child(13) {
+    top: 250px;
+    left: 120px;
+}
+.lights:nth-child(14) {
+    top: 290px;
+    left: 120px;
+}
+
+.red {
+    background: radial-gradient(circle at 65% 15%, white 1px, #FF3131 30%, darkred 60%, aqua 100%); 
+    filter: brightness(.8);
+}
+
+.blue {
+    background: radial-gradient(circle at 65% 15%, white 1px, aqua 30%, darkblue 60%, aqua 100%); 
+    filter: brightness(.8);
+}
+
+.lights-on {
+    filter: unset;
+}
+
+.story-container {
+    width: 90%;
+    max-width: 600px;
+}
+
+.story-container h2 {
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 5px #000;
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.story-container p {
+    font-size: 1rem;
+    font-family: cursive;
+    text-align: center;
+    color: #112A46;
+}

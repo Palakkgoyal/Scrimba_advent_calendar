@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <header>
+            <section>
+                <h1>Christmas Dinner Picker</h1>
+                <button class="scroll-btn" id="scroll-to-dinner-picker">Guide Me to the Perfect Christmas Dinner</button>
+            </section>
+        </header>
+        
+        <main id="main">
+            <div class="food-container">
+                <p class="result" id="result">Your ideal Christmas dinner is <span id="food">...</span></p>
+                <button id="go-to-recipe-btn">Go to recipe</button>
+                <button id="regen-btn"><img src="regenerate.png"></button>
+            </div>
+            <form>
+                <label for="num-input">How many guests are coming?</label>
+                <input id="num-input" type="number" id="guests" name="guests" required min="1" max="500" placeholder="Enter number of guests">
+                <div class="veggie">
+                    <div>
+                        <input type="radio" id="veg" name="food" value="veg">
+                        <label for="veg">Vegetarian</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="non-veg" name="food" value="non-veg">
+                        <label for="non-veg">Non-Vegetarian</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="both" name="food" value="both">
+                        <label for="both">Both</label>
+                    </div>
+                </div>
+                <button id="btn" type="submit">Calculate</button>
+            </form>
+            <section id="recipe-container">
+                <img src="https://cookieandkate.com/images/2021/07/classic-margherita-pizza.jpg" id="dish-img">
+                <h2 id="dish-title"></h2>
+                <div>
+                    <h4>Ingredients</h4>
+                    <ul id="dish-ingredients"></ul>
+                </div>
+                <div>
+                    <h4>Instructions</h4>
+                    <ul id="dish-instructions"></ul>
+                </div>
+            </section>
+        </main>
+        <script src="./index.js" type="module"></script>
+        <script src="index.pack.js"></script>
+    </body>
+</html>

@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("https://www.hp.com/us-en/shop/app/assets/images/uploads/prod/5%20Best%20Coding%20Programs%20for%20Aspiring%20Programmers1650304687858345.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    padding: 1em;
+    font-family: 'Source Code Pro', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    border: 2px solid greenyellow;
+    width: 90%;
+    max-width: 700px;
+    margin-inline: auto;
+    padding: 20px;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px greenyellow,
+                -2px -2px 5px greenyellow;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    border-bottom: 4px double;
+    width: fit-content;
+    margin-inline: auto;
+}
+
+form, .input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form {
+    gap: 1.5em;
+}
+
+.input-container {
+    gap: 0.5em;
+}
+
+input, select, textarea {
+    padding: 0.8em;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    background: #333030;
+    color: greenyellow;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 0.8em;
+    border-radius: 8px;
+    background: yellowgreen;
+    color: black;
+    font-weight: bold;
+    font-family: 'Source Code Pro', monospace;
+    margin-block: 1em;
+    cursor: pointer;
+}
+
+#sol-container {
+    display: none;
+    border: 2px solid;
+    padding: 1em 0.5em;
+    margin-block: 2em;
+    border-radius: inherit;
+    line-height: 1.5;
+}
+
+#solution {
+    margin-top: 0.8em;
+}

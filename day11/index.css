@@ -1,0 +1,185 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root { 
+    --white: #fff;
+    --red: #FF0002;
+    --primary-color: #151515
+}
+
+body {
+    background: url("https://lemonicks.com/wp-content/uploads/2020/10/ChristmasMarket-72-dpi.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin-inline: auto;
+    padding: 1.5em 0.5em;
+}
+
+.bg-transparent {
+    background: rgba(255,255, 255, 0.3);
+}
+
+header {
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    color: midnightblue;
+    padding: 8px;
+    text-shadow: 0 0 20px #eee;
+    margin: 0;
+}
+
+.flag-container {
+    display: flex;
+    align-items: flex-start;
+    height: 180px;
+}
+
+.flag1 {
+    transform: rotateY(180deg) rotate(20deg) scale(0.5);
+    
+}
+
+.flag2 {
+    transform: rotate(20deg) scale(0.5);
+}
+
+.flag-pole {
+    width: 8px;
+    height: 300px;
+    border-radius: 20px;
+    background: #eee;
+}
+
+.flag {
+    width: 90vw;
+    max-width: 200px;
+    aspect-ratio: 1;
+    background: var(--red);
+    box-sizing: border-box;
+    position: relative;
+}
+
+.cross {
+    background: var(--white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cross1 {
+    height: calc(100% * 3/16);
+    width: calc(100% * 5/8);
+}
+
+.cross2 {
+    height: calc(100% * 5/8);
+    width: calc(100% * 3/16);
+}
+
+.today-task-container {
+    /* margin: 1.5em 0.5em; */
+    padding: 1em 0.4em;    
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+.today-task-container p {
+    font-size: 1.2rem;
+    margin-top: 0.7em;
+    text-shadow: 0 0 20px #eee;
+    font-weight: 600;
+}
+
+.calendar-container {
+    margin-block: 5rem;
+    padding: 15px;
+    position: relative;
+}
+
+#dates-container {
+    margin-block: 1.3em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.date {
+    font-size: 1.7rem;
+    padding-block: 0.4em;
+    width: 60px;;
+    font-weight: bold;
+    background: skyblue;
+    color: white;
+    cursor: pointer;
+    flex: 1 60px 0;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+
+.today {
+    background: green;
+}
+
+#popup {
+    background: wheat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    max-width: 90%;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    box-shadow: 1px 1px 8px #eee;
+    display: none;
+}
+
+.popup-sub-container {
+    position: relative;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+}
+
+#cross-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    border: none;
+    border-radius: 50%;
+}

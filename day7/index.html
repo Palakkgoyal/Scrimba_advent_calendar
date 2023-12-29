@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <title>My Wishlist</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <main>
+            <form>
+                <input type="text" id="name" placeholder="Wishful Item" maxlength="150" required>
+                <textarea id="desc" placeholder="What Makes It Special?" rows="4" required maxlength="200"></textarea>
+                <input id="link" type="text" placeholder="Purchase Link" maxlength="200">
+                <button class="btn">Capture Wish</button>
+            </form>
+            
+            <section class="container">
+                <h1>Wishlist</h1>
+                <div id="wishlist-container">
+                    <p class="note">Uh Oh! No wishes to show...</p>
+                </div>
+            </section>
+        </main>
+        <div class="wishlist"></div>
+        <script src="./index.js"></script>
+    </body>
+</html>

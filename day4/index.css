@@ -1,0 +1,203 @@
+:root {
+  --radius: 5px;
+  --main-frame: 15px solid white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('./xmas-bg3.png');
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    padding: 0;
+}
+
+img {
+    height: 450px;
+    display: block;
+}
+
+.left-door, .right-door {
+    border: var(--main-frame);
+}
+
+.left-door, .left-door img {
+    border-right: 0;
+    border-top-left-radius: var(--radius);
+    border-bottom-left-radius: var(--radius);
+}
+
+.right-door, .right-door img {
+    border-left: 0;
+    border-top-right-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+}
+
+
+.joke-display {
+    position: absolute;
+    background-color: white;
+    opacity: 0;
+    left: 0; 
+    right: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border: var(--main-frame);
+    height: 100%;
+    padding: 1em;
+    cursor: pointer;
+    z-index: 45;
+}
+
+button {
+    padding: 0.5em 1em;
+    cursor: pointer;
+    font-family: 'Mountains of Christmas', serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #ff7878;
+    background-image: linear-gradient(315deg, #ff7878 0%, #ff0000 74%);
+    color: white;
+}
+
+.btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 23;
+}
+
+.left {
+    animation: left-open 0.3s forwards;
+}
+
+.right {
+    animation: right-open 0.3s forwards;
+}
+
+.joke {
+    animation: display-joke 0.3s forwards;
+}
+
+/* animation */
+
+@keyframes display-joke {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes hide-joke {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+@keyframes left-open {
+  0% {
+        transform: translateX(0%);
+      }
+  100% {
+        transform: translateX(-100%);
+      }
+}
+
+@keyframes left-close {
+  0% {
+        transform: translateX(-100%);
+      }
+  100% {
+        transform: translateX(0%);
+      }
+}
+
+@keyframes right-open {
+  from {
+        transform: translateX(0%);
+      }
+  to {
+        transform: translateX(100%);
+      }
+}
+
+@keyframes right-close {
+  from {
+        transform: translateX(100%);
+      }
+  to {
+        transform: translateX(0%);
+      }
+}
+
+@media (min-width: 800px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+/* SPINNER */
+
+#loader-container {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    z-index: 999;
+    display: none;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 4px solid #FFF;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border-left: 4px solid #FF3D00;
+  border-bottom: 4px solid transparent;
+  animation: rotation 0.5s linear infinite reverse;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+      

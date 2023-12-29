@@ -1,0 +1,127 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: url("./christmas-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 10vh auto 5vh;
+    padding: 1.2em;
+    gap: 1em;
+}
+
+input, textarea {
+    padding: 0.4em 0.6em;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    box-shadow: 1px 1px 2px #eee;
+}
+
+input:focus, textarea:focus  {
+    outline: none;
+    border: 3px solid #eee;
+}
+
+textarea {
+    line-height: 1.5;
+    resize: none;
+}
+
+.btn {
+    padding: 0.7em;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.2rem;
+    background: radial-gradient(circle at 10% 20%, rgb(137, 247, 254) 0%, rgb(102, 166, 255) 90%);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px, -2px -2px 5px;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    padding-inline: 1.2em;
+    border-radius: 8px;
+    margin-bottom: 3rem;
+}
+
+h1 {
+    font-family: 'Mountains of Christmas', serif;
+    margin-inline: auto;
+    font-size: 3rem;
+    border-bottom: 1px solid;
+    width: fit-content;
+    color: white;
+    text-shadow: 0 0 20px #000;
+}
+
+.wish-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    color: #393232;
+    position: relative;
+}
+
+.wish-container h3 {
+    font-family: cursive;
+}
+
+.wish-container a {
+    color: darkgreen;
+    cursor: pointer;
+    word-break: break-all;
+}
+
+.wish-container a:hover {
+    text-decoration: underline;
+}
+
+.wish-container button {
+    width: 20px;
+    position: absolute;
+    right: 5px;
+    bottom: 0px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.wish-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.glassmorphism-effect {
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.note {
+    text-align: center;
+    font-weight: bold;
+    color: grey;
+}

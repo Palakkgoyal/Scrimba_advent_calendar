@@ -1,0 +1,75 @@
+body {
+    background-image: url('./bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #669180;
+    min-height: 100vh;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header h1 {
+    /* border: 1px solid  red; */
+    text-shadow: 0 0 20px #000;
+    margin-block: 10vh;
+    font-size: 2.5rem;
+}
+
+form {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8em;
+    max-width: 500px;
+    width: 90vw;
+}
+
+label {
+    font-size: 1.3rem;
+    text-shadow: 0 0 20px #000;
+}
+
+textarea {
+    padding: 0.5em;
+    box-shadow: 2px 2px 8px #eee;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    width: 100%;
+    height: 80px;
+    resize: vertical;
+}
+
+.container {
+    max-width: 500px;
+    margin-block: 20px;
+}
+
+.container p {
+    font-size: 1.1rem;
+    color: #eee;
+    padding: 8px;
+    background: brown;
+    line-height: 1.5;
+    margin-bottom: 0;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+
+.glassmorphism-effect {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}

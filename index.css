@@ -1,0 +1,151 @@
+body {
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    background-color: #fff0f5;
+    background-image: linear-gradient(0deg, #fff0f5 0%, #e5fffd 100%);
+    min-height: 100vh;
+    box-sizing: border-box;
+    color: #3e3939;
+    font-family: 'Inter', sans-serif;
+    padding: 1rem;
+}
+
+header {
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    
+}
+
+a {
+    text-decoration: none;
+    color: #3e3939;
+}
+
+h1 span {
+    font-size: 1rem;
+    color: grey;
+}
+
+.about {
+    max-width: 60ch;
+    margin-inline: auto;
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.project {
+    flex: 1;
+    list-style: none;
+    width: 50%;
+    min-width: 250px;
+    max-width: 450px;
+    cursor: pointer;
+    border-radius: 8px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    transition: 0.3s ease-in-out;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project img {
+    width: 100%;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.project h4 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 0.5em 0.2em;
+}
+
+.tech-stacks-container {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 1rem;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.tech-stack {
+    background: grey;
+    color: white;
+    border-radius: 15px;
+    padding: 0.5em 1em;
+}
+
+.decor {
+    position: fixed;
+    width: 257px;
+    height: 239px;
+    border-radius: 49% 51% 71% 29% / 20% 65% 35% 80%;
+    background-color: #118ab2;
+    background-image: linear-gradient(319deg, #118ab2 0%, #06d6a0 37%, #ffd166 100%);
+    z-index: -1;
+}
+
+.decor-1 {
+    top: 0;
+    left: -80px;
+}
+
+.decor-2 {
+    bottom: 0;
+    right: -20px;
+}
+
+
+@media (min-width: 640px)  {
+    body {
+        padding: 2rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .about {
+        font-size: 1.3rem;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+
+    .project h4 {
+        font-size: 1.5rem;
+    }
+
+    .decor {
+        width: 437px;
+        height: 239px;
+    }
+}
+
+@media (min-width: 1000px) {
+    h1 {
+        font-size: 3rem;
+    }
+    
+    .project {
+        min-width: 400px;
+    }
+}
