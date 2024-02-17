@@ -1,9 +1,10 @@
 import { projects } from "./data";
+import { imagesArr } from "/assets/index.js"
 
 const projectsHtml = projects.map((project, idx) => (
-    `<li class="project">
+   `<li class="project">
         <a href="/day${idx+1}/index.html">
-            <img src="assets/day${idx+1}.png" alt=${project.name}>
+            <img src="${imagesArr[idx]}" alt=${project.name}>
             <h4>${project.name}</h4>
             <ul class="tech-stacks-container">
                 ${project.techStacks.map(techStack => (
